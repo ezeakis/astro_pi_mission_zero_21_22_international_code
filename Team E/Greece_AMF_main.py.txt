@@ -1,0 +1,32 @@
+from sense_hat import SenseHat
+sense = SenseHat()
+sense.set_rotation(270)
+
+sense.show_message ("My name should be Marie Curie.", scroll_speed = 0.05)
+
+
+
+
+sense.show_message ("Humidity is ")
+
+humidity = sense.get_humidity()
+humidity = round(humidity)
+sense.show_message (str(humidity))
+
+
+
+
+
+G = (0, 255, 0)
+
+Green_Matrix = [
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+G, G, G, G, G, G, G, G,
+]
+sense.set_pixels(Green_Matrix )

@@ -1,0 +1,24 @@
+from sense_hat import SenseHat
+eve= SenseHat()
+eve.set_rotation(270)
+
+eve.show_message("Hi! Humidity is")
+
+a=eve.get_humidity()
+a=round(a)
+eve.show_message(str(a))
+
+r=(255,0,0)
+b=(0,0,0)
+w=(255,255,255)
+o=(163,68,0)
+green_matrix= [
+b,b,b,b,b,b,b,b,
+b,b,b,w,w,b,b,b,
+b,b,r,o,r,r,b,b,
+b,r,o,r,o,r,r,b,
+b,r,r,o,r,o,r,b,
+b,r,o,o,o,o,r,b,
+b,b,r,r,o,r,b,b,
+b,b,b,r,r,b,b,b,]
+eve.set_pixels(green_matrix)
