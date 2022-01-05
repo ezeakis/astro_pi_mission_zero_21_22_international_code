@@ -1,0 +1,26 @@
+from sense_hat import SenseHat
+sense = SenseHat()
+sense.set_rotation(270)
+
+sense.show_message("My name should be Alan Turing  ")
+
+sense.show_message("humidity is")
+humidity = sense.get_humidity()
+humidity = round(humidity)
+sense.show_message(str(humidity))
+
+
+G = (0,255,0)
+R = (255,0,0)
+Green_Matrix =[
+G,G,R,R,G,R,R,G,
+G,R,R,R,R,R,R,R,
+G,G,R,R,R,R,R,G,
+G,G,G,R,R,R,G,G,
+G,G,G,G,R,G,G,G,
+G,G,G,G,G,G,G,G,
+G,G,G,G,G,G,G,G,
+G,G,G,G,G,G,G,G,
+]
+
+sense.set_pixels(Green_Matrix)
