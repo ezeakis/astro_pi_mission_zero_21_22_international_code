@@ -1,0 +1,19 @@
+from sense_hat import SenseHat
+sense = SenseHat()
+sense.set_rotation(270)
+
+sense.show_message("Hi my name is Newton")
+sense.show_message("The humidity is")
+a = sense.get_humidity()
+a = round(a)
+
+sense.show_message(str(a))
+sense.show_message("The pressure is")
+b = sense.get_pressure()
+b = round(b)
+sense.show_message(str(b))
+
+sense.show_message("The temperature is")
+c = sense.get_temperature()
+c = round(c)
+sense.show_message(str(c))
