@@ -9,7 +9,7 @@ s = (200, 225 , 200)
 r =(225, 0 ,0)
 w = (255,255,255)
 B = (0,0,255)
-sense.show_message("Hi, my name is Ada Lovelace. I love Iraq and Greece.",scroll_speed=0.06, text_colour=B, back_colour=w)
+sense.show_message("My name should be Ada Lovelace. I love Iraq & Greece", scroll_speed=0.06,text_colour=B, back_colour=w)
 humid = round(sense.get_humidity())
 sense.show_message("Humidity= " + str(humid) + "%",scroll_speed=0.06, text_colour=B, back_colour=w)
 iraq =[
