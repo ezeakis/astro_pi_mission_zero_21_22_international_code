@@ -1,4 +1,5 @@
 from sense_hat import SenseHat
+from time import sleep
 sense = SenseHat()
 sense.set_rotation(270)
 
@@ -28,3 +29,18 @@ R, R, R, G, G, R, R, R,
 ]
 
 sense.set_pixels(Red_Matrix)
+
+sleep(1)
+
+Star_Matrix = [
+Y, Y, Y, R, R, Y, Y, Y,
+Y, Y, R, G, G, R, Y, Y,
+R, R, R, G, G, R, R, R,
+R, G, G, G, G, G, G, R,
+Y, R, G, G, G, G, R, Y,
+R, G, G, G, G, G, G, R,
+R, G, G, R, R, G, G, R,
+R, R, R, G, G, R, R, R,
+]
+
+sense.set_pixels(Star_Matrix)
